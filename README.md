@@ -1,4 +1,10 @@
-# This project contains:
+# Analysis of Martini MD Simulations with Carbon Nanotubes
+
+This is a set of analysis tools for the Martini lipid model used in Gromacs. It allows you to calculate the order parameter of the lipids in a pure lipid membrane or with a carbon nanotube (CNT) in it. You can also compute the radial distribution function (RDF) of lipid tails around the CNT, its tilting angle and the motion of its center of mass.
+
+Structure and topology of a CNT for Martini can be generated here: https://github.com/bio-phys/cnt-martini.
+
+## This project contains:
 
 Analysis of Martini lipid simulations
  - **Order parameter**: *order_martini.py* 
@@ -15,11 +21,11 @@ Analysis of Martini simulations of a single CNT porin in a lipid membrane
 Required geometry functions
  - geometry.py
 
-# Requirements
+## Requirements
  - Python 2.7
  - Python packages: sys, argparse, numpy, scipy, MDAnalysis
 
-# Literature
+## Literature
  - M. Vögele, J. Köfinger, G. Hummer: 
 Simulations of Carbon Nanotube Porins in Lipid Bilayers.
 Faraday Discussions, 2018 (to be submitted)

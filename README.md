@@ -1,6 +1,9 @@
-# Analysis of Martini MD Simulations with Carbon Nanotube Porins (or integral membrane proteins)
+# Analysis of Martini MD Simulations with Carbon Nanotube Porins (or membrane proteins)
 
-This is a set of analysis tools for the Martini lipid model used in Gromacs. It allows you to calculate the order parameter of the lipids in a pure lipid membrane or with a carbon nanotube (CNT) in it. You can also compute the radial distribution function (RDF) of lipid tails around the CNT, its tilting angle and the motion of its center of mass.
+This is a set of analysis tools for the Martini lipid model used in Gromacs. 
+It was developed and optimized for use with carbon nanotubes, but can in many cases be used for membrane proteins as well.
+
+It allows you to calculate the order parameter of the lipids in a pure lipid membrane or with a carbon nanotube (CNT) in it. You can also compute the radial distribution function (RDF) of lipid tails around the CNT, its tilting angle and the motion of its center of mass.
 
 Structure and topology of a CNT for Martini can be generated here: https://github.com/bio-phys/cnt-martini.
 

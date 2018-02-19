@@ -1,4 +1,4 @@
-# Analysis of Martini MD Simulations with Carbon Nanotubes
+# Analysis of Martini MD Simulations with Carbon Nanotube Porins (or integral membrane proteins)
 
 This is a set of analysis tools for the Martini lipid model used in Gromacs. It allows you to calculate the order parameter of the lipids in a pure lipid membrane or with a carbon nanotube (CNT) in it. You can also compute the radial distribution function (RDF) of lipid tails around the CNT, its tilting angle and the motion of its center of mass.
 
@@ -19,7 +19,9 @@ for example the following command calculates the order parameter of POPC and sav
     python order_martini.py -p topol.tpr -t traj.xtc -o ../results/order -r POPC
 
 
+
 ### Analysis of Martini simulations of a single CNT porin in a lipid membrane
+
 
 #### **Order by shell**: *order_by_shell_martini.py* 
  calculates the deuterium order parameter in each lipid shell around a carbon nanotube.
@@ -28,8 +30,18 @@ for example the following command calculates the order parameter of POPC and sav
 
     python order_martini.py -p topol.tpr -t traj.xtc -o ../results/order -r POPC -ref 'resname CNT'
 
+
 #### **Tilt and center-of-mass motion**: *cntmotion_martini.py* 
- calculates the tilting angle and the motion of the center of mass of a CNT.
+ calculates the cosine of the tilting angle and the motion of the center of mass (COM) of a CNT (or any other molecule you select).
+ 
+ Usage:
+   
+    python cntmotion_martini.py -p [topology file (.tpr)] -t [trajectory file (.trr/.xtc)] -ocom [output file for COM] -otil [output file for cos of tilt angle] -sel [selection command]
+    
+Example:
+
+    python cntmotion_martini.py -p topol.tpr -t traj.xtc -ocom ../results/com.dat -otil ../results/tilt.dat -sel 'resname CNT'
+
 
 #### **Radial lipid density**: *rdf_martini.py* 
  calculates the radial distribution function of acyl chain beads around the central axis of the CNT.

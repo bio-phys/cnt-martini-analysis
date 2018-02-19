@@ -44,7 +44,16 @@ Example:
 
 
 #### **Radial lipid density**: *rdf_martini.py* 
- calculates the radial distribution function of acyl chain beads around the central axis of the CNT.
+ calculates the radial distribution function of selected beads (e.g. acyl chain beads) around the central axis of the reference molecule (e.g. a CNT)
+ 
+Usage:
+   
+    python rdf_martini.py -p [topology file (.tpr)] -t [trajectory file (.trr/.xtc)] -o [output file] -sel [selection of the molecules for the density] -ref [selection for the reference molecule]
+    
+Example:
+
+    python rdf_martini.py -p topol.tpr -t traj.xtc -o ../results/rdf.dat -sel 'resname POPC and name C* D*' -ref 'resname CNT'
+
 
 
 ### Required geometry functions

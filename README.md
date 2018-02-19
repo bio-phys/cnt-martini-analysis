@@ -18,15 +18,24 @@ for example the following command calculates the order parameter of POPC and sav
 
     python order_martini.py -p topol.tpr -t traj.xtc -o ../results/order -r POPC
 
+
 ### Analysis of Martini simulations of a single CNT porin in a lipid membrane
+
 #### **Order by shell**: *order_by_shell_martini.py* 
  calculates the deuterium order parameter in each lipid shell around a carbon nanotube.
+ 
+ Works like order_martini.py, but you need to provide the MDAnalysis selection command (via the option -ref) for the reference molecule (in our case a CNT), for example:
+
+    python order_martini.py -p topol.tpr -t traj.xtc -o ../results/order -r POPC -ref 'resname CNT'
+
 #### **Tilt and center-of-mass motion**: *cntmotion_martini.py* 
  calculates the tilting angle and the motion of the center of mass of a CNT.
+
 #### **Radial lipid density**: *rdf_martini.py* 
  calculates the radial distribution function of acyl chain beads around the central axis of the CNT.
 
-Required geometry functions
+
+### Required geometry functions
  - geometry.py
 
 ## Requirements

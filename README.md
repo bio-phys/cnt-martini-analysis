@@ -9,6 +9,10 @@ Structure and topology of a CNT for Martini can be generated here: https://githu
 Analysis of Martini lipid simulations
  - **Order parameter**: *order_martini.py* 
  calculates the coarse-grained order parameter of the lipids (works without CNT).
+ Usage:
+     python order_martini.py -p [topology file (.tpr)] -t [trajectory file (.trr/.xtc)] -o [directory and generic name for output files] -r [residue name of the lipid]
+for example the following command calculates the order parameter of POPC and saves the results in the folder 'results':
+    python order_martini.py -p topol.tpr -t traj.xtc -o ../results/order -r POPC
 
 Analysis of Martini simulations of a single CNT porin in a lipid membrane
  - **Order by shell**: *order_by_shell_martini.py* 

@@ -71,5 +71,6 @@ Example:
 
 ## Literature
  - M. Vögele, J. Köfinger, G. Hummer: 
-Simulations of Carbon Nanotube Porins in Lipid Bilayers.
-Faraday Discussions, 2018 (to be submitted)
+   Simulations of Carbon Nanotube Porins in Lipid Bilayers.
+   Faraday Discuss., 2018, Accepted Manuscript, DOI: 10.1039/C8FD00011E  
+   http://pubs.rsc.org/en/content/articlelanding/2018/fd/c8fd00011e
